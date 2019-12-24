@@ -4,7 +4,7 @@
 
 ## Installation
 ```
-composer require miovisman/miovisman/normemail
+composer require miovisman/normemail
 ```
 
 ## normalize() method
