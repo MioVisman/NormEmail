@@ -135,7 +135,7 @@ class NormEmail
 
         // TODO: Process the dot at the beginning of the domain for the ban of the domains array (ban by the domain name without the local part)
 
-        if ('[' !== $domain[0] && \preg_match('%[\x80-\xFF]%', $domain)) {
+        if (isset($domain[0]) && '[' !== $domain[0] && \preg_match('%[\x80-\xFF]%', $domain)) {
             $parts = \explode('.', $domain);
             foreach ($parts as &$part) {
                 $ascii = \idn_to_ascii($part, \IDNA_DEFAULT, \INTL_IDNA_VARIANT_UTS46);

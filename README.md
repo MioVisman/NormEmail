@@ -23,7 +23,9 @@ $email = $nEmail->normalize($email);
 
 ```
 // some string
+                                      =>
 ExampLe                               => example
+ExampLe@                              => example@
 exaMple.COM                           => example.com
 .example.com                          => .example.com
 @example.com                          => example.com
